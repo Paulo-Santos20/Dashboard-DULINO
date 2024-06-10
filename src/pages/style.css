@@ -1,6 +1,5 @@
 
 .municipios-page {
-   background-color: #f0f0f0; 
     padding: 20px; 
   }
   
@@ -11,8 +10,8 @@
   
   .municipio-image {
     background-color: rgb(104, 104, 236);
-    width: 300px; /* Defina a largura desejada */
-    height: 150px; /* Defina a altura desejada */
+    width: 20%; /* Defina a largura desejada */
+    height: 20%; /* Defina a altura desejada */
     border-radius: 10px;
   }  
 

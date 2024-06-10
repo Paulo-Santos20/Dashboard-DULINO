@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
-import coracao from "../images/coracaodemaria.jpg";
-import conceicao from "../images/conceicaodafeira.jpg";
-import feira from "../images/prefeiturafeira.png";
-import taboao from "../images/taboaodaserra.png";
+import coracao from "../images/coracaodemaria.png";
+import conceicao from "../images/conceicaodafeira.png";
+import feira from "../images/taboaodaserra.png";
+import taboao from "../images/prefiturafeira.png";
 
 const Municipios = () => {
   return (
