@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Divider } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Municipios from './pages/Municipios';
 import CoracaoDeMaria from './pages/CoracaoDeMaria';

@@ -1,11 +1,11 @@
-// src/pages/Municipios.js
 import React from 'react';
+import "./style.css";
 
 const Municipios = () => {
   return (
-    <div>
-      <h1>Municípios</h1>
-      <p>Conteúdo da página de Municípios.</p>
+    <div className="municipios-page"> {/* Adicione uma classe para a página Municípios */}
+      <h2>Municípios</h2>
+      {/* Conteúdo da página Municípios */}
     </div>
   );
 };

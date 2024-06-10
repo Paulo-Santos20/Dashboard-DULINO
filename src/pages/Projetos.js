@@ -1,13 +1,13 @@
 // Municipios.js
 import React from 'react';
 
-const Municipios = () => {
+const Projetos = () => {
   return (
     <div>
-      <h1>Municípios</h1>
-      <p>Conteúdo da página de Municípios.</p>
+      <h1>Projetos</h1>
+      <p>Conteúdo da página.</p>
     </div>
   );
 };
 
-export default Municipios;
+export default Projetos;

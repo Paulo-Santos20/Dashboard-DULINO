@@ -7,7 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #1A202C;
+  background-color:white;
 }
 
 main.active {
@@ -53,3 +53,7 @@ main {
 .sidebar-toggle-button.active {
   display: none;
 }
+
+/*------------------------Paginas------------------------------------------*/
+
+
