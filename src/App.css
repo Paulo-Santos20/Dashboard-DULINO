@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A202C;
+}
+
+main.active {
+  margin-left: 300px; /* Adjust based on your sidebar width */
+}
+
+/* src/App.css */
+.App {
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Adiciona transição para suavizar a mudança */
+  margin-left:40px;
+}
+
+.open-sidebar-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.sidebar-toggle-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: white;
+  color: #333; 
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.sidebar-toggle-button.active {
+  display: none;
+}
