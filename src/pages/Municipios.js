@@ -8,8 +8,8 @@ import taboao from "../images/taboaodaserra.png";
 
 const Municipios = () => {
   return (
-    <div className="municipios-page">
-      <h1>Municípios</h1>
+    <div className="municipios-page">      
+      <div className='Banner'>
       <Link to="/coracao-de-maria" className="municipio-link">
         <img src={coracao} alt="Coração de Maria" className="municipio-image" />
       </Link>
@@ -22,8 +22,15 @@ const Municipios = () => {
       <Link to="/feira-de-santana" className="municipio-link">
         <img src={feira} alt="Feira de Santana" className="municipio-image" />
       </Link>
+      </div>
+      <div className='grafico'>
+      <iframe width="40%" height="350" class="chart-iframe" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFnRNk-krJz-U0AMu2IvgxAic6jcQEWh6LtM_rhGyAFzw_mi4niFMHyl9MYB2HbFkRL2mdftTicVAg/pubchart?oid=1063323562&amp;format=interactive"></iframe>
+      <iframe width="40%" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFnRNk-krJz-U0AMu2IvgxAic6jcQEWh6LtM_rhGyAFzw_mi4niFMHyl9MYB2HbFkRL2mdftTicVAg/pubchart?oid=1504166093&amp;format=interactive"></iframe>
+      <iframe width="40%" height="315" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFnRNk-krJz-U0AMu2IvgxAic6jcQEWh6LtM_rhGyAFzw_mi4niFMHyl9MYB2HbFkRL2mdftTicVAg/pubchart?oid=1063323562&amp;format=interactive"></iframe>
+
+      </div>
     </div>
   );
-};
+}
 
 export default Municipios;
