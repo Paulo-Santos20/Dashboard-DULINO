@@ -4,7 +4,7 @@ import "./style.css";
 import coracao from "../images/coracaodemaria.png";
 import conceicao from "../images/conceicaodafeira.png";
 import feira from "../images/taboaodaserra.png";
-import taboao from "../images/prefiturafeira.png";
+import taboao from "../images/prefeiturafeira.png";
 
 const Municipios = () => {
   return (
