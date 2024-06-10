@@ -27,15 +27,18 @@
   }
   
   .iframe-grande {
-    width: calc(60% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
-    height: 500px;
-    border: none;
-  }
-  
-  .iframe-pequeno {
     width: calc(35% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
     height: 350px;
     border: none;
+    border: 1px solid antiquewhite;
+  }
+  
+  .iframe-pequeno {
+    width: calc(30% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
+    height: 350px;
+    border: none;
+    border: 1px solid antiquewhite;
+
   }
   
   /* Consultas de mídia para dispositivos móveis */
@@ -43,9 +46,9 @@
     .iframe-grande {
         height: 350px;
     }
-
-    .iframe-pequeno {
-        height: 300px;
+    
+    .iframe-grande {
+        height: 350px;
     }
 
     .grafico {
