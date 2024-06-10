@@ -1,7 +1,23 @@
 
 .municipios-page {
-    /* Estilos específicos para a página Municípios */
-    background-color: #f0f0f0; /* Exemplo: alterando a cor de fundo */
-    padding: 20px; /* Exemplo: adicione algum espaçamento */
+   background-color: #f0f0f0; 
+    padding: 20px; 
+  }
+  
+  h1{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .municipio-link {
+    margin: 40px; /* Adiciona margem ao redor do link */
+  }
+  
+  .municipio-image {
+    background-color: rgb(104, 104, 236);
+    width: 300px; /* Defina a largura desejada */
+    height: 200px; /* Defina a altura desejada */
+    border-radius: 10px;
   }
   
