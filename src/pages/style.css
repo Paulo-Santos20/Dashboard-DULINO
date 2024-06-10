@@ -14,9 +14,30 @@
     height: 20%; /* Defina a altura desejada */
     border-radius: 10px;
   }  
-
-  .grafico{
-    margin-top: 10px;
-    padding: 20px;
+/*------------------------------------------------Gráfico-------------------------*/
+.grafico {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
+  
+  .iframe-container {
+    display: flex;
+    width: 100%;
+    gap: 5px; /* Adiciona uma distância de 5px entre os iframes */
+  }
+  
+  .iframe-grande {
+    width: calc(40% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
+    height: auto;
+    border: none;
+    border: 1px solid peachpuff;
+  }
+  
+  .iframe-pequeno {
+    width: calc(25% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
+    height: 350px;
+    border: none;
+    border: 1px solid peachpuff;
 
+  }
