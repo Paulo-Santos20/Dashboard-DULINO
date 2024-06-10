@@ -28,16 +28,32 @@
   }
   
   .iframe-grande {
-    width: calc(40% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
-    height: auto;
+    width: calc(60% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
+    height: 500px;
     border: none;
-    border: 1px solid peachpuff;
   }
   
   .iframe-pequeno {
-    width: calc(25% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
+    width: calc(35% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
     height: 350px;
     border: none;
-    border: 1px solid peachpuff;
-
   }
+  
+  /* Consultas de mídia para dispositivos móveis */
+  @media (max-width: 768px) {
+    .grafico {
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .iframe-container {
+      flex-direction: column; 
+    }
+  
+    .iframe-grande,
+    .iframe-pequeno {
+      width: 100%; /* Ocupa 100% da largura da tela em dispositivos móveis */
+      margin: 0; 
+    }
+  }
+  
