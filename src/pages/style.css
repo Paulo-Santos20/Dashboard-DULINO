@@ -1,8 +1,7 @@
 
 .municipios-page {
     padding: 20px; 
-  }
-  
+  }  
 
   .municipio-link {
     margin: 20px; /* Adiciona margem ao redor do link */
@@ -45,7 +44,16 @@
       flex-direction: column;
       gap: 10px; 
     }
-  
+
+    .municipios-page {
+        padding: 0; 
+      }
+
+    .municipio-link {
+        margin: 5px; 
+      }
+      
+        
     .iframe-container {
       flex-direction: column; 
     }
