@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Divider } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Municipios from './pages/Municipios';
 import CoracaoDeMaria from './pages/CoracaoDeMaria';
@@ -26,6 +26,7 @@ const App = () => {
         </button>
         <main className={isSidebarActive ? 'active' : ''}>
           <Routes>
+            <Route path="/" element={<Navigate to="/municipios" />} />
             <Route path="/municipios" element={<Municipios />} />
             <Route path="/coracao-de-maria" element={<CoracaoDeMaria />} />
             <Route path="/conceicao-da-feira" element={<ConceicaoDaFeira />} />
