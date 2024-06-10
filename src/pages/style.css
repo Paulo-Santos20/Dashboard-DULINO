@@ -40,6 +40,14 @@
   
   /* Consultas de mídia para dispositivos móveis */
   @media (max-width: 768px) {
+    .iframe-grande {
+        height: 350px;
+    }
+
+    .iframe-pequeno {
+        height: 300px;
+    }
+
     .grafico {
       flex-direction: column;
       gap: 10px; 
@@ -52,8 +60,7 @@
     .municipio-link {
         margin: 5px; 
       }
-      
-        
+              
     .iframe-container {
       flex-direction: column; 
     }
