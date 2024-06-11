@@ -1,77 +1,80 @@
-
 .municipios-page {
-    padding: 20px; 
-  }  
+  padding: 20px;
+}
 
-  .municipio-link {
-    margin: 20px; /* Adiciona margem ao redor do link */
-  }
-  
-  .municipio-image {
-    background-color: rgb(104, 104, 236);
-    width: 20%; /* Defina a largura desejada */
-    height: 20%; /* Defina a altura desejada */
-    border-radius: 10px;
-  }  
+.municipio-link {
+  margin: 20px;
+  /* Adiciona margem ao redor do link */
+}
+
+.municipio-image {
+  background-color: rgb(104, 104, 236);
+  width: 20%;
+  /* Defina a largura desejada */
+  height: 20%;
+  /* Defina a altura desejada */
+  border-radius: 10px;
+}
+
 /*------------------------------------------------Gráfico-------------------------*/
 .grafico {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iframe-container {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 40px;  
+}
+
+.iframe-grande {
+  width: calc(35% - 140px);
+  height: 350px;
+  border: 1px solid antiquewhite;
+}
+
+.iframe-pequeno {
+  width: calc(30% - 10px);
+  height: 437px;
+  border: 1px solid antiquewhite;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+}
+
+@media (max-width: 768px) {
   .iframe-container {
-    display: flex;
-    width: 100%;
-    gap: 5px; /* Adiciona uma distância de 5px entre os iframes */
-  }
-  
+    flex-direction: column;
+    gap: 10px;
+}
   .iframe-grande {
-    width: calc(35% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
     height: 350px;
-    border: none;
-    border: 1px solid antiquewhite;
   }
-  
   .iframe-pequeno {
-    width: calc(30% - 10px); /* Subtrai 10px para acomodar os 5px de margem de cada lado */
-    height: 350px;
-    border: none;
-    border: 1px solid antiquewhite;
-
+    height: 330px;
   }
-  
-  /* Consultas de mídia para dispositivos móveis */
-  @media (max-width: 768px) {
-    .iframe-grande {
-        height: 350px;
-    }
-    
-    .iframe-grande {
-        height: 350px;
-    }
-
-    .grafico {
-      flex-direction: column;
-      gap: 10px; 
-    }
-
-    .municipios-page {
-        padding: 0; 
-      }
-
-    .municipio-link {
-        margin: 5px; 
-      }
-              
-    .iframe-container {
-      flex-direction: column; 
-    }
-  
-    .iframe-grande,
-    .iframe-pequeno {
-      width: 100%; /* Ocupa 100% da largura da tela em dispositivos móveis */
-      margin: 0; 
-    }
+  .grafico {
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .municipios-page {
+    padding: 0;
+  }
+
+  .municipio-link {
+    margin: 5px;
+  }
+
+  .iframe-grande,
+  .iframe-pequeno {
+    width: 100%;
+    width: auto;
+    margin: 0 0 0px 0; /* Margem inferior para espaçamento */
+    transform: none; /* Remove o scale */
+    overflow: hidden;
+  }
+}
