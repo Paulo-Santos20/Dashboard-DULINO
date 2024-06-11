@@ -24,20 +24,23 @@
   width: 100%;
   gap: 5px;
   flex-wrap: wrap;
-  margin-top: 20px; /* Ajuste a margem superior */
-  margin-bottom: 20px; /* Adicione margem inferior */
-
+  margin-top: 20px;
+  /* Ajuste a margem superior */
+  margin-bottom: 20px;
+  /* Adicione margem inferior */
 }
 
 .iframe-grande {
   width: calc(33.33% - 10px);
-  height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
+  height: calc(100vh - 470px);
+  /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
 }
 
 .iframe-pequeno {
   width: calc(33.33% - 10px);
-  height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
+  height: calc(100vh - 470px);
+  /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
   transform-origin: 0 0;
 }
@@ -47,22 +50,28 @@
     flex-direction: column;
     gap: 10px;
   }
+
   .iframe-grande {
     height: 330px;
   }
+
   .iframe-pequeno {
     height: 330px;
   }
+
   .grafico {
     flex-direction: column;
     gap: 10px;
   }
+
   .municipios-page {
     padding: 0;
   }
+
   .municipio-link {
     margin: 5px;
   }
+
   .iframe-grande,
   .iframe-pequeno {
     width: 100%;
@@ -70,4 +79,16 @@
     transform: none;
     overflow: hidden;
   }
+}
+
+@media (max-width: 1366px) {
+  .iframe-container {
+    height: 700px;
+    gap: 5px;
+  }   
+  .iframe-pequeno {
+    width: calc(33.33% - 10px);
+    height: 50vh ;
+    
+  } 
 }
