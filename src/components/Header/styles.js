@@ -13,6 +13,6 @@ export const Container = styled.div`
     height: 30px;
     margin-top: 32px;
     margin-left: 32px;
-    cursor: pointer;
+    cursor: pointer;    
   }
 `;

@@ -39,7 +39,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   padding: 30px;
-  font-family: 'Run', sans-serif;
+  font-family: 'Run', sans-serif;  
   }
 `;
 

@@ -22,8 +22,10 @@ const SidebarItemContainer = styled.div`
   font-size: 20px;  
    cursor: pointer;
   border-radius: 10px;
-  margin: 0 15px 20px;
-
+  margin: 0 15px 20px; 
+  border: 1px solid;
+}
+  border-right: 2px solid;
 
   &:hover {
     background-color: ${props => props.selected ? '#2E7CD1' : '#f0f0f0'};
