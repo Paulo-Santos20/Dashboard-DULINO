@@ -17,25 +17,33 @@
 .grafico {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centraliza o contêiner de gráficos */
+  justify-content: space-between;
 }
 
 .iframe-container {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   gap: 5px;
-  justify-content: center; /* Centraliza os iframes */
-  margin-top: 20px; /* Ajuste a margem superior */
-  margin-bottom: 20px; /* Adicione margem inferior */
+  flex-wrap: wrap;
+  margin-top: 20px;
+  /* Ajuste a margem superior */
+  margin-bottom: 20px;
+  /* Adicione margem inferior */
 }
 
-.iframe-grande, .iframe-pequeno {
+.iframe-grande {
   width: calc(33.33% - 10px);
-  height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
+  height: calc(100vh - 470px);
+  /* Ajuste a altura para preencher o espaço disponível */
+  border: 1px solid antiquewhite;
+}
+
+.iframe-pequeno {
+  width: calc(33.33% - 10px);
+  height: calc(100vh - 470px);
+  /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
   transform-origin: 0 0;
-  display: block; /* Garante que os iframes são elementos de bloco */
-  margin: 0 auto; /* Centraliza os iframes individualmente */
 }
 
 @media (max-width: 768px) {
