@@ -16,7 +16,7 @@ const SidebarItemContainer = styled.div`
   align-items: center;
   padding: 10px;
   color: ${props => props.selected ? 'white' : 'black'};
-  background-color: ${props => props.selected ? 'blue' : 'transparent'};
+  background-color: ${props => props.selected ? '#2E7CD1' : 'transparent'};
   border-radius: 5px;
   transition: background-color 0.3s ease;   
   font-size: 20px;  
@@ -26,7 +26,7 @@ const SidebarItemContainer = styled.div`
 
 
   &:hover {
-    background-color: ${props => props.selected ? 'blue' : '#f0f0f0'};
+    background-color: ${props => props.selected ? '#2E7CD1' : '#f0f0f0'};
   }
 
   svg {
