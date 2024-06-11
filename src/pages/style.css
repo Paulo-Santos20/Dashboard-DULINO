@@ -4,19 +4,15 @@
 
 .municipio-link {
   margin: 20px;
-  /* Adiciona margem ao redor do link */
 }
 
 .municipio-image {
   background-color: rgb(104, 104, 236);
   width: 20%;
-  /* Defina a largura desejada */
   height: 20%;
-  /* Defina a altura desejada */
   border-radius: 10px;
 }
 
-/*------------------------------------------------Gráfico-------------------------*/
 .grafico {
   width: 100%;
   display: flex;
@@ -28,18 +24,20 @@
   width: 100%;
   gap: 5px;
   flex-wrap: wrap;
-  margin-top: 40px;  
+  margin-top: 20px; /* Ajuste a margem superior */
+  margin-bottom: 20px; /* Adicione margem inferior */
+
 }
 
 .iframe-grande {
-  width: calc(35% - 140px);
-  height: 350px;
+  width: calc(33.33% - 10px);
+  height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
 }
 
 .iframe-pequeno {
-  width: calc(30% - 10px);
-  height: 437px;
+  width: calc(33.33% - 10px);
+  height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
   transform: scale(0.8);
   transform-origin: 0 0;
@@ -49,9 +47,9 @@
   .iframe-container {
     flex-direction: column;
     gap: 10px;
-}
+  }
   .iframe-grande {
-    height: 350px;
+    height: 330px;
   }
   .iframe-pequeno {
     height: 330px;
@@ -60,21 +58,17 @@
     flex-direction: column;
     gap: 10px;
   }
-
   .municipios-page {
     padding: 0;
   }
-
   .municipio-link {
     margin: 5px;
   }
-
   .iframe-grande,
   .iframe-pequeno {
     width: 100%;
-    width: auto;
-    margin: 0 0 0px 0; /* Margem inferior para espaçamento */
-    transform: none; /* Remove o scale */
+    margin: 0 0 20px 0;
+    transform: none;
     overflow: hidden;
   }
 }
