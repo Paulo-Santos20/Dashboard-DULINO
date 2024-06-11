@@ -17,7 +17,7 @@
 .grafico {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .iframe-container {
@@ -29,13 +29,14 @@
   /* Ajuste a margem superior */
   margin-bottom: 20px;
   /* Adicione margem inferior */
+  justify-content: center;
 }
 
 .iframe-grande {
   width: calc(33.33% - 10px);
   height: calc(100vh - 470px);
   /* Ajuste a altura para preencher o espaço disponível */
-  border: 1px solid antiquewhite;
+  border: 1px solid antiquewhite;  
 }
 
 .iframe-pequeno {
@@ -45,6 +46,7 @@
   border: 1px solid antiquewhite;
   transform-origin: 0 0;
 }
+
 
 @media (max-width: 768px) {
   .iframe-container {
@@ -91,4 +93,18 @@
     width: calc(33.33% - 4px);
     height: 60vh ;    
   } 
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover;
 }
