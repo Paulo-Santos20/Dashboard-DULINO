@@ -39,7 +39,6 @@
   width: calc(33.33% - 10px);
   height: calc(100vh - 470px); /* Ajuste a altura para preencher o espaço disponível */
   border: 1px solid antiquewhite;
-  transform: scale(0.8);
   transform-origin: 0 0;
 }
 
