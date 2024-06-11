@@ -87,8 +87,7 @@
     gap: 5px;
   }   
   .iframe-pequeno {
-    width: calc(33.33% - 10px);
-    height: 50vh ;
-    
+    width: calc(33.33% - 4px);
+    height: 60vh ;    
   } 
 }
