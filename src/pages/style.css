@@ -36,14 +36,14 @@
   width: calc(33.33% - 10px);
   height: calc(100vh - 470px);
   /* Ajuste a altura para preencher o espaço disponível */
-  border: 1px solid antiquewhite;  
+  border: 1px solid #2e7dd13b;  
 }
 
 .iframe-pequeno {
   width: calc(33.33% - 10px);
   height: calc(100vh - 470px);
   /* Ajuste a altura para preencher o espaço disponível */
-  border: 1px solid antiquewhite;
+  border: 1px solid #2e7dd13b;
   transform-origin: 0 0;
 }
 
@@ -99,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .avatar {
